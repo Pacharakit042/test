@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โครงร่างหน้าเว็บ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .section {
+            background-color: #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text-block {
+            width: 70%;
+        }
+        .image-placeholder {
+            width: 25%;
+            height: 150px;
+            background-color: #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            background-color: #666;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .content-block {
+            background-color: #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>หัวข้อหลัก</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <div class="text-block">
+                    <p>ข้อความบรรทัดที่ 1</p>
+                    <p>ข้อความบรรทัดที่ 2</p>
+                </div>
+                <div class="image-placeholder">รูปภาพ</div>
+            </div>
+
+            <div class="button">ปุ่มกด</div>
+
+            <div class="content-block">
+                <p>เนื้อหาส่วนกลาง</p>
+            </div>
+
+            <div class="section">
+                <div>
+                    <p>หัวข้อย่อย</p>
+                    <p>ข้อความบรรทัดที่ 3</p>
+                    <p>ข้อความบรรทัดที่ 4</p>
+                </div>
+                <div class="button">ปุ่มเพิ่มเติม</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>ส่วนท้ายเว็บไซต์</p>
+        </footer>
+    </div>
+</body>
+</html>

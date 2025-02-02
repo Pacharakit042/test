@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Mockup V2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+        .wrapper {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header, footer {
+            background: #444;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .text-area {
+            flex: 1;
+            margin-right: 15px;
+        }
+        .image-box {
+            width: 150px;
+            height: 150px;
+            background: #bbb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .main-section, .sub-section {
+            background: #dcdcdc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #004999;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>แถบหัวเว็บไซต์</header>
+
+        <div class="content">
+            <div class="text-area">
+                <p>ข้อความส่วนแรก</p>
+                <p>รายละเอียดเพิ่มเติม</p>
+            </div>
+            <div class="image-box">รูปภาพ</div>
+        </div>
+
+        <a href="#" class="btn">คลิกที่นี่</a>
+
+        <div class="main-section">
+            เนื้อหาหลักของเว็บไซต์ที่นี่
+        </div>
+
+        <div class="sub-section">
+            <h3>หัวข้อย่อย</h3>
+            <p>รายละเอียดหัวข้อย่อย 1</p>
+            <p>รายละเอียดหัวข้อย่อย 2</p>
+        </div>
+
+        <a href="#" class="btn">ปุ่มเพิ่มเติม</a>
+
+        <footer>ส่วนท้ายของเว็บไซต์</footer>
+    </div>
+</body>
+</html>
